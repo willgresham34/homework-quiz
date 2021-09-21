@@ -3,7 +3,7 @@
 }
 
 html {
- background-color: gray;
+ background-color:white;
 }
 
 
@@ -15,54 +15,59 @@ body {
 }
 
 nav {
-    background-color: honeydew;
+    background-color: darkblue;
     height: fit-content;
     width: 100vw;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 20px;
+    column-gap: 60%;
 }
 
 .start-container {
-    display: none;
+    display: -ms-inline-flexbox;
     margin: 20px;
-    background-color: black;
+    background-color: darkblue;
     color: white;
     text-align: center;
     width: 50vw;
     height: 50vh;
     padding: 15px;
+    border-radius: 25px;
 
 }
 
 .timer {
-    align-self: flex-end;
+    /* justify-content: flex-end; */
     width: fit-content;
-    /* margin-left: 85%; */
+    color: white;
 }
 
 .highscores {
     width: fit-content;
     height: fit-content;
+    color: orange;
 }
 
 .hide {
-    display: hide;
+    display: none;
 }
 
 .quiz-container {
-    display: flex;
-    background-color: whitesmoke;
+    display: none;
     flex-direction: column;
     justify-content: flex-start; 
     align-content: center;
     margin: 25px;
     padding: 10px;
+    width: 50vw;
+    height: 50vh;
+
 }
 
 .question {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bolder;
     color: var(--dark);
     width: 40vw;
@@ -81,7 +86,22 @@ nav {
 
 .option-list:hover{
 transform: scale(1.05);
-box-shadow: 3px 3px 3px black;
+box-shadow: 2px 2px 2px darkblue;
 cursor: pointer;
 }
 
+footer {
+    display: flex;
+    color: lightgray;
+    background-color: white;
+    border-top: lightgray solid 3px;
+    font-style: italic;
+
+}
+
+.start-btn {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: bolder;
+    align-self: center;
+}
