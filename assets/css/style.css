@@ -1,3 +1,7 @@
+:root {
+    --dark: rgb(36, 36, 36);
+}
+
 html {
  background-color: gray;
 }
@@ -21,6 +25,7 @@ nav {
 }
 
 .start-container {
+    display: none;
     margin: 20px;
     background-color: black;
     color: white;
@@ -29,8 +34,8 @@ nav {
     height: 50vh;
     padding: 15px;
 
-
 }
+
 .timer {
     align-self: flex-end;
     width: fit-content;
@@ -45,3 +50,38 @@ nav {
 .hide {
     display: hide;
 }
+
+.quiz-container {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-content: center;
+    margin: 25px;
+    padding: 10px;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--dark);
+    width: 40vw;
+    margin-bottom: 15px;
+}
+
+.option-list {
+ background-color: darkblue;
+ color: white;
+ border-radius: 4px;
+ width: fit-content;
+ margin: 5px;
+ padding: 5px;
+
+}
+
+.option-list:hover{
+transform: scale(1.05);
+box-shadow: 3px 3px 3px black;
+cursor: pointer;
+}
+
