@@ -39,7 +39,6 @@ nav {
 }
 
 .timer {
-    /* justify-content: flex-end; */
     width: fit-content;
     color: white;
 }
@@ -50,12 +49,9 @@ nav {
     color: orange;
 }
 
-.hide {
-    display: none;
-}
 
 .quiz-container {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start; 
     align-content: center;
@@ -104,4 +100,8 @@ footer {
     font-size: 20px;
     font-weight: bolder;
     align-self: center;
+}
+
+.hide {
+    display: none;
 }
