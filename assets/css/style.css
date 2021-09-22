@@ -23,6 +23,7 @@ nav {
     flex-direction: row;
     font-size: 20px;
     column-gap: 60%;
+    padding: 5px;
 }
 
 .start-container {
@@ -47,6 +48,7 @@ nav {
     width: fit-content;
     height: fit-content;
     color: orange;
+    text-decoration: none;
 }
 
 
@@ -101,7 +103,19 @@ footer {
     font-weight: bolder;
     align-self: center;
 }
+.endPage {
+    display: -ms-inline-flexbox;
+    margin: 20px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    padding: 15px;
+    border-radius: 25px;
+}
 
 .hide {
     display: none;
 }
+

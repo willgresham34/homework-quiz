@@ -1,19 +1,24 @@
 var startBtn = document.querySelector('.start-btn');
-var timerEL = document.querySelector('.timer');
+var timerEl = document.querySelector('.time');
 var startBox = document.querySelector('.start-container');
 var quizBox = document.querySelector('.quiz-container'); 
 var option_list = document.querySelector('.option_list');
 var answerRes = document.querySelector('.answerRes');
 var option = document.querySelector('.option');
-var que_count = 0;
+var endPage = document.querySelector('.endPage');
+var score = document.querySelector('.score');
 
+var que_count = 0;
+var timer;
+var timeCount;
 //when start button is clicked
 startBtn.addEventListener('click', startQuiz);
 function startQuiz() {
     startBox.classList.add('hide');
     quizBox.classList.remove('hide');
-    // startTimer(60);
+    startTimer();
     showQuestions(0);
+    timeCount = 60;
 }
 //show question
 function showQuestions(index) {
@@ -44,12 +49,26 @@ function selectedOption(answer) {
         answerRes.innerHTML = "Correct!";
     } else {
         answerRes.innerHTML = "Wrong!";
+        timeCount -= 10;
     }
     if (que_count < questions.length - 1){
         que_count++,
         showQuestions(que_count);
     } else {
-        // showResults();
+        showResults();
     }
 }
 
+function showResults() {
+    quizBox.classList.add('hide');
+    endPage.classList.remove('hide');
+    score.innerHTML = timeCount;
+    clearInterval(timer);
+}
+
+function startTimer() {
+    timer = setInterval(function (){
+        timeCount--;
+        timerEl.textContent = timeCount;
+    }, 1000);
+}

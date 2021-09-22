@@ -9,8 +9,8 @@
      <body>
          <nav>
              <!-- Insert the timer and the highscore link page too nav -->
-             <a href="#" class="highscores">View Highscores</a>
-             <div class="timer">Time remaining: <span class="time"> 60 </span></div>
+             <a href="./assets/highscores.html" class="highscores">View Highscores</a>
+             <div class="timer">Time remaining: <span class="time"></span></div>
          </nav>
          <section id="start-container" class="start-container">
             <div><h1> Coding Quiz Challenge </h1></div>
@@ -31,11 +31,13 @@
             <footer class="answerRes"></footer>
         </section>
 
-        <section class="hide">
-            <div class="endPage">
+        <section class="endPage hide">
+            <div>
                 <h2> All done</h2>
                 <div> <h4> Your final score is <span class='score'></span></h4> </div>    
-                <div> <h4> Enter initials: </h4><button class="submit-btn">Submit</button></div>
+                <div> <h4> Enter initials: </h4> <input type="text" name="initials" id="initials">
+                     <button class="submit-btn">Submit</button> 
+                </div>
             </div>
         </section>
         <script src="/assets/js/questions.js"></script>
@@ -43,4 +45,4 @@
         <script src="/assets/js/script.js"></script>
 
      </body>
- </html>
+ </html> 
