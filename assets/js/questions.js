@@ -40,21 +40,21 @@ options: [
     question: "Which of the following is a self closing tag in HTML",
     answer: "link tag",
     options: [
-    ' p tag',
-    ' link tag',
-    ' h1 tag',
-    ' span tag',
+    'p tag',
+    'link tag',
+    'h1 tag',
+    'span tag',
     ]
 },
     {
     numb: 5,
     question: 'What do you use to identify a class in css?',
-    answer: ".",
+    answer: '" . "',
     options: [
-    '#',
-    '.',
+    ' " # " ',
+    '" . "',
     'Just its name', 
-    ':',
+    '" : "',
     ]
 }
 
