@@ -70,7 +70,7 @@ nav {
     margin-bottom: 15px;
 }
 
-.option-list {
+.option {
  background-color: darkblue;
  color: white;
  border-radius: 4px;
@@ -80,7 +80,7 @@ nav {
 
 }
 
-.option-list:hover{
+.option:hover{
 transform: scale(1.05);
 box-shadow: 2px 2px 2px darkblue;
 cursor: pointer;

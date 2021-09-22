@@ -2,6 +2,7 @@ var startBtn = document.querySelector('.start-btn');
 var timerEL = document.querySelector('.timer');
 var startBox = document.querySelector('.start-container');
 var quizBox = document.querySelector('.quiz-container'); 
+var option_list = document.querySelector('.option_list');
 
 //when start button is clicked
 startBtn.addEventListener('click', startQuiz);
@@ -19,7 +20,7 @@ function showQuestions(index) {
     var optTag = '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
     + '<div class="option"><span>' + questions[index].options[1] + '</span></div>'
     + '<div class="option"><span>' + questions[index].options[2] + '</span></div>'
-    + '<div class="option"><span>' + questions[index].options[3] + '</span></div>'
+    + '<div class="option"><span>' + questions[index].options[3] + '</span></div>';
 
     question.innerHTML = queTag;
     option_list.innerHTML = optTag;
