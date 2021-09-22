@@ -38,12 +38,12 @@ options: [
     {
     numb: 4,
     question: "Which of the following is a self closing tag in HTML",
-    answer: "<link>",
+    answer: "link tag",
     options: [
-    '<p>',
-    '<h1>',
-    '<link>',
-    '<span>',
+    ' p tag',
+    ' link tag',
+    ' h1 tag',
+    ' span tag',
     ]
 },
     {
